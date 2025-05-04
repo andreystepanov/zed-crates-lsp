@@ -1,0 +1,12 @@
+id = "crates-lsp"
+name = "CratesLSP"
+version = "0.1.0"
+schema_version = 1
+authors = ["Appelgriebsch <info@appelgriebsch.com>"]
+description = "Language Server implementation targeted specifically towards the Cargo.toml file of Rust projects, providing auto-completion for crate versions and in-editor hints when the selected crate versions are out of date."
+repository = "https://github.com/appelgriebsch/zed-crates-lsp"
+
+[language_servers.crates-lsp]
+name = "CratesLSP"
+language = "TOML"
+languages = ["TOML", "Rust"]
